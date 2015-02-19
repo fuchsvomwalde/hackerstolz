@@ -1,0 +1,365 @@
+/**
+ * custom.css
+ * http://www.hackerstolz.de
+ * 
+ * Copyright Hackerstolz e.V.
+ * http://www.hackerstolz.de
+ */
+
+
+/* General Styles */
+html * {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 400;
+}
+body {
+  padding-top: 50px;
+  font: "Open Sans" 300;
+  /* background-color: #f5f5f5; */
+}
+section {
+	margin-top: 100px;
+	position: relative;
+	display: block;
+}
+@media (max-width: 767px) {
+	section {
+		margin-top: 30px;
+	}
+}
+.align-vertical {
+	top: 50%;
+	transfrom: translateY(-50%);
+	-webkit-transfrom: translateY(-50%);
+}
+.align-horizontal {
+	left: 50%;
+	transfrom: translateX(-50%);
+	-webkit-transfrom: translateX(-50%);
+}
+.spacer-large {
+	display: block;
+	height: 100px;
+	width: 100%;
+}
+.spacer {
+	display: block;
+	height: 25px;
+	width: 100%;
+}
+@media (max-width: 767px) {
+	.spacer-large {
+		height: 75px;
+	}
+	.spacer {
+		height: 20px;
+	}
+}
+@media (max-width: 359px) {
+	.spacer-large {
+		height: 50px;
+	}
+	.spacer {
+		height: 10px;
+	}
+}
+
+/* Navigation Bar - Overwrite Bootstrap with SAP Theme */
+/*.navbar {
+	background-color: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(rgba(240, 240, 240, 0.9)));
+	background: -webkit-linear-gradient(top, #ffffff, rgba(240, 240, 240, 0.9));
+	background: -moz-linear-gradient(top, #ffffff, rgba(240, 240, 240, 0.9));
+	background: -ms-linear-gradient(top, #ffffff, rgba(240, 240, 240, 0.9));
+	background: -o-linear-gradient(top, #ffffff, rgba(240, 240, 240, 0.9));
+
+	box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+
+	border-top: #009de0 4px solid;
+	border-bottom: rgba(0,0,0,0.2) 1px solid;
+}
+.navbar-brand img {
+	float: left;
+	margin-top: -8px;
+}
+.navbar-brand span, .navbar-brand:hover {
+    font-weight: 600;
+    color: #777 !important;
+    text-shadow: rgb(255, 255, 255) 0px 1px;
+}
+.navbar ul {
+	float: right;
+}
+.navbar ul .active > a, .navbar ul .active > a:hover {
+    background-color: transparent !important;
+    color: #1b8dcf !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.navbar-nav li a {
+	text-shadow: 0 1px 0 #fff !important;
+	color: #777 !important;
+}
+.navbar-nav li a:hover {
+	color: #000 !important;
+}
+@media (max-width: 767px) {
+	.navbar-toggle {
+		background-color: rgba(0,0,0,0) !important;
+		border-color: rgba(0,0,0,0.4) !important;
+	}
+	.navbar-toggle:hover {
+		background-color: #ddd !important;
+	}
+	.navbar-toggle .icon-bar {
+		background-color: rgba(0,0,0,0.4) !important;
+	}
+	#navbar.navbar-collapse {
+		border-color: rgba(0,0,0,0.2) !important;
+	}
+	#navbar.navbar-collapse ul {
+		float: none;
+	}
+	#navbar.navbar-collapse li {
+		text-align: center;
+	}
+}
+*/
+
+/* Background Slideshow */
+.background-slideshow {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #fff;
+}
+.background-slideshow ul {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.background-slideshow ul li {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transition: opacity 3s;
+	transition: opacity 3s;
+}
+.background-slideshow ul li.current {
+	opacity: 1;
+}
+.background-slideshow ul li img {
+	position: absolute;
+	left: 50%;
+	max-height: 100%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+}
+/*@media (min-aspect-ratio: 3/2) {*/
+@media (min-width: 1200px) {	
+	.background-slideshow ul li img {
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		width: 100%;
+		height: auto;
+		max-height: none;
+	}
+}
+
+/* Headlines */
+.intro-text {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+/* Intro Area */
+.intro-area {
+	/*color: #fff;*/
+}
+.intro-area .intro-text h1 {
+	font-size: 42pt;
+	font-weight: 800;
+	text-shadow: rgba(255,255,255,0.5) 0px 1px 15px;
+}
+.intro-area .intro-text span {
+	font-size: 76pt;
+	font-weight: 300;
+}
+.intro-area h2 {
+	font-weight: 600;
+	font-size: 24pt;
+}
+.intro-area p {
+	font-size: 14pt;
+}
+.monospace {
+	font-family: 'Menlo', 'Lucida Console', 'Courier New', serif;
+}
+@media (max-width: 767px) {
+	.intro-area .intro-text h1 {
+		font-size: 5.5vw;
+	}
+	.intro-area .intro-text span {
+		font-size: 10vw;
+	}
+	.intro-area h2 {
+		font-size: 18pt;
+	}
+	.intro-area p {
+		font-size: 12pt;
+	}
+}
+@media (max-width: 359px) {
+	#intro-video {
+		width: 100%;
+	}
+}
+
+/* Column Box Styles */
+/*.col-inner {
+	background-color: rgba(255,255,255,0.9);
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	box-shadow: 0 0 35px rgba(0,0,0,0.3);
+	color: #0a0a0a;
+}
+.col-inner img, .col-inner .link {
+	padding: 20px;
+}
+*/
+
+/* Contact Area */
+#contact {
+	background-color: #f5f5f5;
+	box-shadow: 0 0 50px rgba(0,0,0,0.15);
+}
+.sap-blue-medium, .sap-purple-medium, .sap-orange-medium {
+	font-size: 18pt;
+	font-weight: 400;
+}
+.sap-blue-medium {
+	color: rgb(0,118,203);
+}
+.sap-purple-medium {
+	color: rgb(118,10,133);
+}
+.sap-orange-medium {
+	color: rgb(227,85,0);
+}
+.media-channels {
+	/*background-color: #272822;*/
+	background-color: #f5f5f5;
+	/* color: rgba(255,255,255,0.75); */
+}
+.media-channels .intro-text h3 {
+	font-weight: 300;
+	padding-bottom: 30px;
+}
+.media-channels a {
+	margin: 5px;
+}
+@media (max-width: 1200px) {
+	.contact-icon {
+		width: 150px;
+	}
+}
+@media (max-width: 767px) {
+	.contact-icon {
+		width: 75px;
+	}
+}
+@media (max-width: 359px) {
+	.contact-icon {
+		width: 50px;
+	}
+	.media-channels a {
+		margin: 0px;
+	}
+}
+
+/* Footer */
+footer {
+	background-color: #171814;
+	padding: 15px 0 5px 0;
+	color: rgba(255,255,255,0.25);
+}
+
+/* Responsive Images */
+#responsive-img-desktop {
+	max-width: 980px;
+	width: 100%;
+}
+#responsive-img-tablet {
+	max-width: 825px;
+	width: 100%;
+}
+#responsive-img-ruler {
+	max-width: 940px;
+	width: 100%;
+}
+
+/* Animation Effects */
+.anim-in-l, .anim-in-r, .anim-in-b, .anim-in-t {
+	opacity: 0;
+}
+.anim-in-l.start-fx {
+	opacity: 1;
+	-webkit-animation: animContentFromLeft 1s cubic-bezier(0.7,0,0.3,1) both;
+	animation: animContentFromLeft 1s cubic-bezier(0.7,0,0.3,1) both;
+}
+.anim-in-r.start-fx {
+	opacity: 1;
+	-webkit-animation: animContentFromRight 1s cubic-bezier(0.7,0,0.3,1) both;
+	animation: animContentFromRight 1s cubic-bezier(0.7,0,0.3,1) both;
+}
+.anim-in-b.start-fx {
+	opacity: 1;
+	-webkit-animation: animContentFromBottom 1s cubic-bezier(0.7,0,0.3,1) both;
+	animation: animContentFromBottom 1s cubic-bezier(0.7,0,0.3,1) both;
+}
+.anim-in-t.start-fx {
+	opacity: 1;
+	-webkit-animation: animContentFromTop 1s cubic-bezier(0.7,0,0.3,1) both;
+	animation: animContentFromTop 1s cubic-bezier(0.7,0,0.3,1) both;
+}
+
+@-webkit-keyframes animContentFromLeft {
+	from { opacity: 0; -webkit-transform: translate3d(-200px,0,0); }
+}
+@keyframes animContentFromLeft {
+	from { opacity: 0; -webkit-transform: translate3d(-200px,0,0); transform: translate3d(-200px,0,0); }
+}
+
+@-webkit-keyframes animContentFromRight {
+	from { opacity: 0; -webkit-transform: translate3d(200px,0,0); }
+}
+@keyframes animContentFromRight {
+	from { opacity: 0; -webkit-transform: translate3d(200px,0,0); transform: translate3d(200px,0,0); }
+}
+
+@-webkit-keyframes animContentFromBottom {
+	from { opacity: 0; -webkit-transform: translate3d(0,200px,0); }
+}
+@keyframes animContentFromBottom {
+	from { opacity: 0; -webkit-transform: translate3d(0,200px,0); transform: translate3d(0,200px,0); }
+}
+
+@-webkit-keyframes animContentFromTop {
+	from { opacity: 0; -webkit-transform: translate3d(0,-200px,0); }
+}
+@keyframes animContentFromTop {
+	from { opacity: 0; -webkit-transform: translate3d(0,-200px,0); transform: translate3d(0,-200px,0); }
+}

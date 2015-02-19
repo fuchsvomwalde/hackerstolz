@@ -1,0 +1,176 @@
+/**
+ * intro-effects.css
+ * http://www.hackerstolz.de
+ * 
+ * Copyright Hackerstolz e.V.
+ * http://www.hackerstolz.de
+ */
+
+.intro {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	min-height: 480px;
+	width: 100%;
+	height: 100%;
+	background: #f1f1f1;
+}
+
+.intro h1 {
+	margin: 0;
+}
+
+.intro-logo,
+.intro-loader {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	cursor: default;
+	pointer-events: none;
+}
+
+.intro-logo {
+	top: 10%;
+	height: 100%;
+	-webkit-transform: translate3d(0,10%,0);
+	transform: translate3d(0,10%,0);
+}
+@media(max-width: 600px) {
+	.intro-logo img {
+		width: 100%;
+	}
+}
+
+.intro-loader {
+	bottom: 20%;
+}
+
+.intro .intro-logo-inner {
+	display: block;
+	margin: 0 auto;
+}
+
+.intro .intro-loader svg path {
+	fill: none;
+	stroke-width: 6;
+}
+
+.intro .intro-loader svg path.intro-loader-circlebg {
+	stroke: #ddd;
+}
+
+.intro .intro-loader svg path.intro-loader-circle {
+	-webkit-transition: stroke-dashoffset 0.2s;
+	transition: stroke-dashoffset 0.2s;
+	stroke: #0069a4; /* Hackerstolz Blue */
+}
+
+
+/* Animations */
+
+/* Initial animation of header elements */
+.loading .intro-logo,
+.loading .intro-loader {
+	opacity: 1;
+	-webkit-animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
+	animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
+}
+
+.loading .intro-loader {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+
+@-webkit-keyframes animInitialHeader {
+	from { opacity: 0; -webkit-transform: translate3d(0,800px,0); }
+}
+
+@keyframes animInitialHeader {
+	from { opacity: 0; -webkit-transform: translate3d(0,800px,0); transform: translate3d(0,800px,0); }
+}
+
+/* Header elements when loading finishes */
+.loaded .intro-logo,
+.loaded .intro-loader {
+	opacity: 1;
+}
+
+.loaded .intro-logo {
+	-webkit-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-webkit-animation: animLoadedLogo 1s cubic-bezier(0.7,0,0.3,1) forwards;
+	animation: animLoadedLogo 1s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+@-webkit-keyframes animLoadedLogo {
+	to { opacity: 0; -webkit-transform: translate3d(0,100%,0) translate3d(0,50px,0) scale3d(0.65,0.65,1); }
+}
+
+@keyframes animLoadedLogo {
+	to { opacity: 0; -webkit-transform: translate3d(0,100%,0) translate3d(0,50px,0) scale3d(0.65,0.65,1); transform: translate3d(0,100%,0) translate3d(0,50px,0) scale3d(0.65,0.65,1); }
+}
+
+.loaded .intro-loader {
+	-webkit-animation: animLoadedLoader 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
+	animation: animLoadedLoader 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+@-webkit-keyframes animLoadedLoader {
+	to { opacity: 0; -webkit-transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); }
+}
+
+@keyframes animLoadedLoader {
+	to { opacity: 0; -webkit-transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); }
+}
+
+/* Header animation when loading finishes */
+.loaded .intro {
+	-webkit-animation: animLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+	animation: animLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+@-webkit-keyframes animLoadedHeader {
+	to { -webkit-transform: translate3d(0,-100%,0); }
+}
+
+@keyframes animLoadedHeader {
+	to { -webkit-transform: translate3d(0,-100%,0); transform: translate3d(0,-100%,0); }
+}
+
+/* Content animations */
+.navbar {
+	-webkit-transform: translate3d(0,-200px,0); transform: translate3d(0,-200px,0);
+}
+
+.loaded .navbar {
+	-webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0);
+	-webkit-animation: animLoadedNavbar 1s cubic-bezier(0.7,0,0.3,1) both;
+	animation: animLoadedNavbar 1s cubic-bezier(0.7,0,0.3,1) both;
+}
+
+.loaded .container:not(#nav-container) {
+	-webkit-animation: animLoadedContent 1s cubic-bezier(0.7,0,0.3,1) both;
+	animation: animLoadedContent 1s cubic-bezier(0.7,0,0.3,1) both;
+}
+
+/*.loaded .container:not(:first-of-type) {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}*/
+
+@-webkit-keyframes animLoadedContent {
+	from { opacity: 0; -webkit-transform: translate3d(0,200px,0); }
+}
+
+@keyframes animLoadedContent {
+	from { opacity: 0; -webkit-transform: translate3d(0,200px,0); transform: translate3d(0,200px,0); }
+}
+
+@-webkit-keyframes animLoadedNavbar {
+	from { opacity: 0; -webkit-transform: translate3d(0,-200px,0); }
+}
+
+@keyframes animLoadedNavbar {
+	from { opacity: 0; -webkit-transform: translate3d(0,-200px,0); transform: translate3d(0,-200px,0); }
+}
