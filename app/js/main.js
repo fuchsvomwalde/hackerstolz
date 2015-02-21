@@ -38,7 +38,6 @@
             if (support.animations) {
                 this.removeEventListener(animEndEventName, onEndInitialAnimation);
             }
-
             startLoading();
         };
 
