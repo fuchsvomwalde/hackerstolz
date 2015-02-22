@@ -64,6 +64,10 @@ section {
 	}
 }
 
+#mainpage-logo {
+	width: 50vw;
+}
+
 /* Navigation Bar - Overwrite Bootstrap with SAP Theme */
 /*.navbar {
 	background-color: #fff;
