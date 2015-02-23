@@ -63,6 +63,9 @@ section {
 		height: 10px;
 	}
 }
+strong {
+	font-weight: bold;
+}
 
 #mainpage-logo {
 	width: 50vw;
