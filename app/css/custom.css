@@ -67,8 +67,8 @@ strong {
 	font-weight: bold;
 }
 
-#mainpage-logo {
-	width: 50vw;
+.mainpage-logo {
+	width: 50vw !important;
 }
 
 /* Navigation Bar - Overwrite Bootstrap with SAP Theme */
