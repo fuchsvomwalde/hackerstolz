@@ -85,13 +85,13 @@
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <!-- data-id and href should refer to id of referred section -->
-                        <li data-id="goals"><a href="#goals">Ziele</a>
+                        <li data-id="goals"><a data-txt="goals" href="#goals">Ziele</a>
                         </li>
-                        <li data-id="events"><a href="#events">Events</a>
+                        <li data-id="events"><a data-txt="events" href="#events">Events</a>
                         </li>
-                        <li data-id="member"><a href="#member">Mitglieder</a>
+                        <li data-id="member"><a data-txt="members" href="#member">Mitglieder</a>
                         </li>
-                        <li data-id="contact"><a href="#contact">Kontakt</a>
+                        <li data-id="contact"><a data-txt="contact" href="#contact">Kontakt</a>
                         </li>
                     </ul>
                 </div>
@@ -99,19 +99,13 @@
             </div>
         </nav>
 
+        <div id="language-setting" class="">
+            <a href="javascript:void(0);" class="glyphicon glyphicon-globe"></a>
+            <span class='language-selected' data-language='DE'>Deutsch</span>
+            <span class='' data-language='EN'>English</span>
+        </div>
+
         <header id="overview" class="background-slideshow intro-area">
-            <!-- All images should have a ratio of 3/2 -->
-            <!-- ul>
-                <li class="current">
-                  <img src="img/bgr-1.jpg" alt="Background">
-                </li>
-                <li>
-                  <img src="img/bgr-2.jpg" alt="Background">
-                </li>
-                <li>
-                  <img src="img/bgr-3.jpg" alt="Background">
-                </li>
-                </ul -->
             <div class="container"></div>
             <!-- DUMMY -->
             <div class="container">
@@ -124,7 +118,7 @@
 
             <div class="container">
                 <div class="text-center">
-                    <p class="monospace">Hackerstolz ist ein junger Verein aus der Metropolregion Rhein-Neckar. Wir veranstalten Hackathons, fördern die <span class="text-info">/digitale|"helles blondes"|kicker/g</span> Kultur und setzen uns für mehr Frauen im IT Bereich ein.</p>
+                    <p data-txt="intro_text" class="monospace">Hackerstolz ist ein junger Verein aus der Metropolregion Rhein-Neckar. Wir veranstalten Hackathons, fördern die <span class="text-info">/digitale|"helles blondes"|kicker/g</span> Kultur und setzen uns für mehr Frauen im IT Bereich ein.</p>
                 </div>
             </div>
             <!-- /.container -->
@@ -136,35 +130,35 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 anim-in-l">
-                        <h2>Ziele</h2>
-                        <p class="lead">Was wir uns auf die Fahne geschrieben haben:</p>
+                        <h2 data-txt="goals">Ziele</h2>
+                        <p data-txt="goals_intro" class="lead">Was wir uns auf die Fahne geschrieben haben:</p>
                         <blockquote>
-                            <p>Brot & Butter Wissen<small>Förderung von Kompetenz im Bereich der digitalen Medien.</small>
+                            <p data-txt="goals_intro_p1">Brot & Butter Wissen<small>Förderung von Kompetenz im Bereich der digitalen Medien.</small>
                             </p>
                         </blockquote>
                         <blockquote>
-                            <p>Multikulti<small>Interdisziplinäre, praxisnahe Vermittlung von Programmierkenntnissen.</small>
+                            <p data-txt="goals_intro_p2">Multikulti<small>Interdisziplinäre, praxisnahe Vermittlung von Programmierkenntnissen.</small>
                             </p>
                         </blockquote>
                         <blockquote>
-                            <p>Spaß haben<small>Veranstaltung von Hacking-Wettbewerben, Praxis-Workshops und Informationsveranstaltungen in der Metropolregion Rhein Neckar und darüber hinaus.</small>
+                            <p data-txt="goals_intro_p3">Spaß haben<small>Veranstaltung von Hacking-Wettbewerben, Praxis-Workshops und Informationsveranstaltungen in der Metropolregion Rhein Neckar und darüber hinaus.</small>
                             </p>
                         </blockquote>
                         <blockquote>
-                            <p>Die Befreiung aus dem Elfenbeinturm<small>Sicherstellung einer engen Verzahnung universitärer Inhalte mit praktischen Herausforderungen.</small>
+                            <p data-txt="goals_intro_p4">Die Befreiung aus dem Elfenbeinturm<small>Sicherstellung einer engen Verzahnung universitärer Inhalte mit praktischen Herausforderungen.</small>
                             </p>
                         </blockquote>
                         <blockquote>
-                            <p>Verliebte verkuppeln<small>Vernetzung von Nachwuchstalenten mit der lokalen IT-Industrie</small>
+                            <p data-txt="goals_intro_p5">Verliebte verkuppeln<small>Vernetzung von Nachwuchstalenten mit der lokalen IT-Industrie</small>
                             </p>
                         </blockquote>
                     </div>
                     <div class="col-md-6 anim-in-r">
                         <div class="text-center">
-                            <h3>Satzung</h3>
-                            <p>Unsere Satzung wurde am 24.2.2015 verabschiedet.</br>Jetzt warten wir auf die Eintragung ins Vereinsregister</p>
+                            <h3 data-txt="satzung">Satzung</h3>
+                            <p data-txt="satzung_intro">Unsere Satzung wurde am 24.2.2015 verabschiedet.</br>Jetzt warten wir auf die Eintragung ins Vereinsregister</p>
                             <div class="spacer"></div>
-                            <p class="link"><a class="btn btn-primary btn-lg" target="_blank" href="http://docs.hackerstolz.de/satzung-hackerstolz.pdf" role="button">Zur Satzung</a>
+                            <p class="link"><a class="btn btn-primary btn-lg" target="_blank" href="http://docs.hackerstolz.de/satzung-hackerstolz.pdf" role="button" data-txt="satzung_nav">Zur Satzung</a>
                             </p>
                         </div>
                     </div>
@@ -176,8 +170,9 @@
         <section id="events">
             <div class="container">
                 <div class="anim-in-l">
-                    <h2>Events</h2>
-                    <p class="lead">Unser erstes Event: <a target="_blanks" href="http://eduhacks.hackerstolz.de">EDUHacks Mannheim Hackathon</a></p>
+                    <h2 data-txt="events">Events</h2>
+                    <p data-txt="events_nav" class="lead">Unser erstes Event: <a target="_blanks" href="http://eduhacks.hackerstolz.de">EDUHacks Mannheim Hackathon</a>
+                    </p>
                 </div>
                 <div class="row">
                     <div class="col-md-12 anim-in-l">
@@ -192,16 +187,17 @@
         <section id="member">
             <div class="container">
                 <div class="anim-in-l">
-                    <h2>Der harte Kern</h2>
-                    <p class="lead">Erfahre hier etwas mehr über die Gründer von Hackerstolz.
+                    <h2 data-txt="members_intro1">Der harte Kern</h2>
+                    <p data-txt="members_intro2" class="lead">Erfahre hier etwas mehr über die Gründer von Hackerstolz.
                     </p>
                 </div>
                 <div class="row">
                     <div class="col-md-4 anim-in-b text-center">
                         <div class="col-inner">
                             <h3>Alexander Müller</h3>
-                            <a target="_blank" href="http://www.alexcmueller.de/"><img class="img-responsive center-block " src="img/alex_bw.png"></a>
-                            <p>Der Hipster-Hacker</p>
+                            <a target="_blank" href="http://www.alexcmueller.de/"><img class="img-responsive center-block " src="img/alex_bw.png">
+                            </a>
+                            <p data-txt="role1">Der Hipster-Hacker</p>
                             <!--<p class="link"><a class="btn btn-danger btn-lg" href="http://www.alexcmueller.de/" role="button">Link zu Alexs Seite</a>-->
                             </p>
                         </div>
@@ -211,7 +207,7 @@
                             <h3>Michael Dell</h3>
                             <a arget="_blank" href="http://mdell.org"> <img class="img-responsive center-block " src="img/michi_bw.png">
                             </a>
-                            <p>Der Chef aller Chefs</p>
+                            <p data-txt="role2">Der Chef aller Chefs</p>
                             <!--<p class="link"><a class="btn btn-danger btn-lg" href="http://mdell.org/" role="button">Link zu Michis Seite</a>-->
                             </p>
                         </div>
@@ -219,19 +215,22 @@
                     <div class="col-md-4 anim-in-b text-center">
                         <div class="col-inner">
                             <h3>Jascha Quintern</h3>
-                            <a arget="_blank" href="http://www.jascha-quintern.de"><img class="img-responsive center-block " src="img/jascha_bw.png"></a>
-                            <p>Design Genie made in Germany</p>
+                            <a arget="_blank" href="http://www.jascha-quintern.de"><img class="img-responsive center-block " src="img/jascha_bw.png">
+                            </a>
+                            <p data-txt="role3">Design Genie made in Germany</p>
                             <!--<p class="link"><a class="btn btn-danger btn-lg" href="http://www.jascha-quintern.de/" role="button">Link zu Jaschas Seite</a>-->
                             </p>
                         </div>
                     </div>
-                </div><div class="spacer"></div>
+                </div>
+                <div class="spacer"></div>
                 <div class="row">
                     <div class="col-md-4 anim-in-b text-center">
                         <div class="col-inner">
                             <h3>Andrea Brown</h3>
-                            <a rget="_blank" href="https://instagram.com/ohandrea_5891/"><img class="img-responsive center-block " src="img/andrea_bw.png"></a>
-                            <p>Intercultural Liaison</p>
+                            <a rget="_blank" href="https://instagram.com/ohandrea_5891/"><img class="img-responsive center-block " src="img/andrea_bw.png">
+                            </a>
+                            <p data-txt="role4">Intercultural Liaison</p>
                             <!--<p class="link"><a class="btn btn-danger btn-lg" href="http://www.google.de" role="button">Link zu Alexs Seite</a>-->
                             </p>
                         </div>
@@ -239,8 +238,9 @@
                     <div class="col-md-4 anim-in-b text-center">
                         <div class="col-inner">
                             <h3>Theresa Best</h3>
-                            <a target="_blank" href="http://google.de?q=Theresa%20Best"><img class="img-responsive center-block " src="img/theresa_bw.png"></a>
-                            <p>Head of Diversity</p>
+                            <a target="_blank" href="http://google.de?q=Theresa%20Best"><img class="img-responsive center-block " src="img/theresa_bw.png">
+                            </a>
+                            <p data-txt="role5">Head of Diversity</p>
                             <!--<p class="link"><a class="btn btn-danger btn-lg" href="http://de.linkedin.com/in/pascalgutheil/de" role="button">Link zu Pascals Seite</a>-->
                             </p>
                         </div>
@@ -248,19 +248,22 @@
                     <div class="col-md-4 anim-in-b text-center">
                         <div class="col-inner">
                             <h3>Lucina Herzog</h3>
-                            <a rget="_blank" href="http://google.de?q=Lucina%20Herzog"><img class="img-responsive center-block " src="img/lucina_bw.png"></a>
-                            <p>Fernost Expertin</p>
+                            <a rget="_blank" href="http://google.de?q=Lucina%20Herzog"><img class="img-responsive center-block " src="img/lucina_bw.png">
+                            </a>
+                            <p data-txt="role6">Fernost Expertin</p>
                             <!--<p class="link"><a class="btn btn-danger btn-lg" href="http://www.google.de" role="button">Link zu Alexs Seite</a>-->
                             </p>
                         </div>
                     </div>
-                </div><div class="spacer"></div>
+                </div>
+                <div class="spacer"></div>
                 <div class="row">
                     <div class="col-md-4 anim-in-b text-center">
                         <div class="col-inner">
                             <h3>Victor Gütteler</h3>
-                            <a arget="_blank" href="http://de.linkedin.com/pub/victor-guettler/47/52/399/de"><img class="img-responsive center-block " src="img/victorg_bw.png"></a>
-                            <p>Der Operations Manager</p>
+                            <a arget="_blank" href="http://de.linkedin.com/pub/victor-guettler/47/52/399/de"><img class="img-responsive center-block " src="img/victorg_bw.png">
+                            </a>
+                            <p data-txt="role7">Der Operations Manager</p>
                             <!--<p class="link"><a class="btn btn-danger btn-lg" href="http://de.linkedin.com/pub/victor-guettler/47/52/399/de" role="button">Link zu Victors Seite</a>-->
                             </p>
                         </div>
@@ -268,28 +271,33 @@
                     <div class="col-md-4 anim-in-b text-center">
                         <div class="col-inner">
                             <h3>Norman Weisenburger</h3>
-                            <a rget="_blank" href="http://www.google.de?q=Norman%20Weisenburger"><img class="img-responsive center-block " src="img/norman_bw.png"></a>
-                            <p>Schatzmeister</p>
+                            <a rget="_blank" href="http://www.google.de?q=Norman%20Weisenburger"><img class="img-responsive center-block " src="img/norman_bw.png">
+                            </a>
+                            <p data-txt="role8">Schatzmeister</p>
                             <!--<p class="link"><a class="btn btn-danger btn-lg" href="http://www.google.de" role="button">Link zu Alexs Seite</a>-->
                             </p>
                         </div>
                     </div>
                     <div class="col-md-4 anim-in-b text-center">
                         <div class="col-inner">
-                            <h3>Victor Wündisch</h3></a>
-                            <a rget="_blank" href="http://de.linkedin.com/pub/victor-wündisch/3a/ab7/ab8/de"><img class="img-responsive center-block " src="img/victorw_bw.png"></a>
-                            <p>Blue Chip Connection</p>
+                            <h3>Victor Wündisch</h3>
+                            </a>
+                            <a rget="_blank" href="http://de.linkedin.com/pub/victor-wündisch/3a/ab7/ab8/de"><img class="img-responsive center-block " src="img/victorw_bw.png">
+                            </a>
+                            <p data-txt="role9">Blue Chip Connection</p>
                             <!--<p class="link"><a class="btn btn-danger btn-lg" href="http://de.linkedin.com/pub/victor-wündisch/3a/ab7/ab8/de" role="button">Link zu Victors Seite</a>-->
                             </p>
                         </div>
                     </div>
-                </div><div class="spacer"></div>
+                </div>
+                <div class="spacer"></div>
                 <div class="row">
                     <div class="col-md-4 anim-in-b text-center">
                         <div class="col-inner">
                             <h3>Pascal Gutheil</h3>
-                            <a target="_blank" href="http://de.linkedin.com/in/pascalgutheil/de"><img class="img-responsive center-block " src="img/pascal_bw.png"></a>
-                            <p>BWL Connection</p>
+                            <a target="_blank" href="http://de.linkedin.com/in/pascalgutheil/de"><img class="img-responsive center-block " src="img/pascal_bw.png">
+                            </a>
+                            <p data-txt="role10">BWL Connection</p>
                             <!--<p class="link"><a class="btn btn-danger btn-lg" href="http://de.linkedin.com/in/pascalgutheil/de" role="button">Link zu Pascals Seite</a>-->
                             </p>
                         </div>
@@ -297,8 +305,9 @@
                     <div class="col-md-4 anim-in-b text-center">
                         <div class="col-inner">
                             <h3>Martin Dell</h3>
-                            <a target="_blank" href="https://www.linkedin.com/profile/view?id=361809594"><img class="img-responsive center-block " src="img/martin_bw.png"></a>
-                            <p>Juristischer Berater</p>
+                            <a target="_blank" href="https://www.linkedin.com/profile/view?id=361809594"><img class="img-responsive center-block " src="img/martin_bw.png">
+                            </a>
+                            <p data-txt="role11">Juristischer Berater</p>
                             <!--<p class="link"><a class="btn btn-danger btn-lg" href="#" role="button">Link zu Martins Seite</a>-->
                             </p>
                         </div>
@@ -306,19 +315,22 @@
                     <div class="col-md-4 anim-in-b text-center">
                         <div class="col-inner">
                             <h3>Nikolas Burk</h3>
-                            <a target="_blank" href="http://nikolasburk.com"><img class="img-responsive center-block " src="img/niko_bw.png"></a>
-                            <p>iOS Entwickler</p>
+                            <a target="_blank" href="http://nikolasburk.com"><img class="img-responsive center-block " src="img/niko_bw.png">
+                            </a>
+                            <p data-txt="role12">iOS Entwickler</p>
                             <!--<p class="link"><a class="btn btn-danger btn-lg" href="http://de.linkedin.com/in/pascalgutheil/de" role="button">Link zu Pascals Seite</a>-->
                             </p>
                         </div>
                     </div>
-                </div><div class="spacer"></div>
+                </div>
+                <div class="spacer"></div>
                 <div class="row">
                     <div class="col-md-4 anim-in-b text-center">
                         <div class="col-inner">
                             <h3>Mirjam Chinnow</h3>
-                            <a rget="_blank" href="https://www.linkedin.com/profile/view?id=321998484"><img class="img-responsive center-block " src="img/mirjam_bw.png"></a>
-                            <p>Tischkickerprofi</p>
+                            <a rget="_blank" href="https://www.linkedin.com/profile/view?id=321998484"><img class="img-responsive center-block " src="img/mirjam_bw.png">
+                            </a>
+                            <p data-txt="role13">Tischkickerprofi</p>
                             <!--<p class="link"><a class="btn btn-danger btn-lg" href="http://www.google.de" role="button">Link zu Alexs Seite</a>-->
                             </p>
                         </div>
@@ -326,8 +338,9 @@
                     <div class="col-md-4 anim-in-b text-center">
                         <div class="col-inner">
                             <h3>Timo Gerards</h3>
-                            <a target="_blank" href="http://google.de?q=Timo%20Gerards"><img class="img-responsive center-block " src="img/timo_bw.png"></a>
-                            <p>Der Macher</p>
+                            <a target="_blank" href="http://google.de?q=Timo%20Gerards"><img class="img-responsive center-block " src="img/timo_bw.png">
+                            </a>
+                            <p data-txt="role14">Der Macher</p>
                             <!--<p class="link"><a class="btn btn-danger btn-lg" href="http://de.linkedin.com/in/pascalgutheil/de" role="button">Link zu Pascals Seite</a>-->
                             </p>
                         </div>
@@ -344,11 +357,11 @@
 
             <div class="container">
                 <div class="anim-in-l">
-                    <h3>Wir suchen nach Gefährten die uns auf unserer Mission begleiten &#9786;</h3>
+                    <h3 data-txt="members_aquire">Wir suchen nach Gefährten die uns auf unserer Mission begleiten &#9786;</h3>
 
-                    <p class="lead">Lust Mitglied zu werden?</p>
+                    <p data-txt="members_intro3" class="lead">Lust Mitglied zu werden?</p>
 
-                    <p class="link"><a class="btn btn-danger btn-lg" href="mailto:info@hackerstolz.de?subject=Ich möchte Mitglied werden&body=//Erzähl etwas über dich ..." role="button">Beitreten....</a>
+                    <p class="link"><a class="btn btn-danger btn-lg" href="mailto:info@hackerstolz.de?subject=Ich möchte Mitglied werden&body=//Erzähl etwas über dich ..." role="button" data-txt="members_action">Beitreten....</a>
                     </p>
                 </div>
             </div>
@@ -360,12 +373,12 @@
                 <div class="spacer"></div>
 
                 <div class="anim-in-l">
-                    <h2>Stay Tuned</h2>
+                    <h2 data-txt="contact_intro1">Stay Tuned</h2>
                     <div class="spacer"></div>
-                    <p class="link"><a class="btn btn-primary btn-lg" href="mailto:info@hackerstolz.de?subject=Kontakt&body=//Erzähl was du wissen möchtest ..." role="button"><i class="glyphicon glyphicon-envelope"></i>&nbsp;&nbsp;Kontakt</a>
+                    <p class="link" data-txt="contact_intro2"><a class="btn btn-primary btn-lg" href="mailto:info@hackerstolz.de?subject=Kontakt&body=//Erzähl was du wissen möchtest ..." role="button"><i class="glyphicon glyphicon-envelope"></i>&nbsp;&nbsp;Kontakt</a>
                     </p>
                     <div class="spacer"></div>
-                    <p class="lead">Erfahre mehr auf unseren Media Channels:</p>
+                    <p class="lead" data-txt="contact_intro3">Erfahre mehr auf unseren Media Channels:</p>
                 </div>
 
             </div>
@@ -409,24 +422,34 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/pathLoader.js"></script>
+    <script src="js/texts.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Piwik -->
-    <script type="text/javascript">
-      var _paq = _paq || [];
-      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-      _paq.push(["setCookieDomain", "*.hackerstolz.de"]);
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="//piwik.mdell.org/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
+    <!--script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+    _paq.push(["setCookieDomain", "*.hackerstolz.de"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u = "//piwik.mdell.org/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
         _paq.push(['setSiteId', 4]);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-      })();
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
     </script>
-    <noscript><p><img src="//piwik.mdell.org/piwik.php?idsite=4" style="border:0;" alt="" /></p></noscript>
+    <noscript>
+        <p><img src="//piwik.mdell.org/piwik.php?idsite=4" style="border:0;" alt="" />
+        </p>
+    </noscript-->
     <!-- End Piwik Code -->
 
 </body>

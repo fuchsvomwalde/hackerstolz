@@ -29,7 +29,10 @@
         navButtonList = Array.prototype.slice.call(navButtons),
         navButtonIndex = 0,
         animInItems = document.querySelectorAll('.anim-in-l, .anim-in-r, .anim-in-b, .anim-in-t'),
-        contentAreas = document.querySelectorAll('header, section');
+        contentAreas = document.querySelectorAll('header, section'),
+        language = document.getElementById('language-setting'),
+        textElementsList = document.querySelectorAll('[data-txt]'),
+        hideLangageList;
 
     function init() {
         //setInterval(startBgrSlideshow, 15000);
@@ -46,12 +49,23 @@
 
         // initial animation
         classie.add(container, 'loading');
-
         if (support.animations) {
             container.addEventListener(animEndEventName, onEndInitialAnimation);
         } else {
             onEndInitialAnimation();
         }
+
+        // translate
+        translate();
+        Array.prototype.slice.call(language.children).forEach(function(o,i,a){
+            o.addEventListener('click', function(e) {
+                if (e.currentTarget.nodeName === 'A') {
+                    languageDialog();
+                } else {
+                    selectLanguage(e);
+                }
+            });
+        });
     }
 
     function startLoading() {
@@ -103,11 +117,42 @@
         classie.add(navButtons[navButtonIndex], 'active');
     }
 
-    /*function startBgrSlideshow() {
-        classie.remove(backgroundSlides[backgroundSlideIndex], 'current');
-        backgroundSlideIndex = (backgroundSlideIndex + 1) % (backgroundSlides.length);
-        classie.add(backgroundSlides[backgroundSlideIndex], 'current');
-    }*/
+    function translate() {
+        var text_key;
+        var textElement;
+        for (var i = 0; i < textElementsList.length; i++) {
+            textElement = textElementsList[i];
+            text_key = textElement.getAttribute("data-txt");
+            if (text_key) {
+                textElement.innerHTML = _[text_key][l];
+            }
+        }
+    }
+
+    function languageDialog() {
+        if (language.className === '') {
+            language.className = 'language-select';
+            clearTimeout(hideLangageList);
+            hideLangageList = setTimeout(languageDialog, 4000);
+        } else {
+            language.className = '';
+        }
+    }
+
+    function selectLanguage(e) {
+        if (e.currentTarget.classList.contains('language-selected')) {
+            e.preventDefault();
+        } else {
+            e.currentTarget.parentNode.querySelector('.language-selected').className = '';
+            e.currentTarget.className = 'language-selected';
+
+            // Update global language and translate
+            l = e.currentTarget.getAttribute('data-language');
+            translate();
+        };
+        clearTimeout(hideLangageList);
+        hideLangageList = setTimeout(languageDialog, 4000);
+    }
 
     function noscroll() {
         window.scrollTo(0, 0);
@@ -141,7 +186,6 @@
             // mark nav button if top of section is whithin viewport
             if (elemTop < viewYPosBottom && elemTop > window.pageYOffset) {
                 sectionId = contentAreas[j].id;
-                debugger
                 break;
             }
         }

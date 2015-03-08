@@ -59,7 +59,7 @@
 
         <!-- initial header -->
         <div class="intro">
-            <h1 class="intro-logo" ><img class="mainpage-logo intro-logo-inner" style="width:700px" alt="Intro Logo" src="img/eduhacks-logo.svg"></h1>
+            <h1 class="intro-logo"><img class="mainpage-logo intro-logo-inner" style="width:700px" alt="Intro Logo" src="img/eduhacks-logo.svg"></h1>
             <div class="intro-loader">
                 <svg class="intro-logo-inner" width="60px" height="60px" viewBox="0 0 80 80">
                     <path class="intro-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z" />
@@ -84,15 +84,25 @@
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <!-- data-id and href should refer to id of referred section -->
-                        <li data-id="about"><a href="#about">About</a></li>
-                         <li data-id="partners"><a href="#partners">Partners</a></li>
-                        <li data-id="faq"><a href="#faq">FAQ</a></li>
-                        <li data-id="sponsors"><a href="#sponsors">Sponsoring</a></li>
+                        <li data-id="about"><a data-txt="about" href="#about">About</a>
+                        </li>
+                        <li data-id="partners"><a href="#partners">Partners</a>
+                        </li>
+                        <li data-id="faq"><a href="#faq">FAQ</a>
+                        </li>
+                        <li data-id="sponsors"><a href="#sponsors">Sponsoring</a>
+                        </li>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
             </div>
         </nav>
+
+        <div id="language-setting" class="">
+            <a href="javascript:void(0);" class="glyphicon glyphicon-globe"></a>
+            <span class='language-selected' data-language='DE'>Deutsch</span>
+            <span class='' data-language='EN'>English</span>
+        </div>
 
         <header id="overview" class="background-slideshow intro-area">
             <!-- All images should have a ratio of 3/2 -->
@@ -121,9 +131,7 @@
             <div class="container">
                 <div class="text-center">
 
-                    <p  class="monospace">EduHacks Mannheim is the first hackathon taking place at the University of Mannheim.
-The event brings students, educators and technologists together to share ideas, form teams,
-design digital products and rapidly build innovative solutions that tackle today's educational challenges.</p>
+                    <p class="monospace">EduHacks Mannheim is the first hackathon taking place at the University of Mannheim. The event brings students, educators and technologists together to share ideas, form teams, design digital products and rapidly build innovative solutions that tackle today's educational challenges.</p>
                     <p>Are you an organization interested in sponsoring our event to get in touch with highly motivated students?</p>
 
                     <p class="link"><a class="btn btn-danger btn-lg" href="#sponsors" role="button">Click here</a>
@@ -143,47 +151,51 @@ design digital products and rapidly build innovative solutions that tackle today
                     <div class="col-md-8 anim-in-l">
                         <p class="lead">We want to build a platform for students (from all disciplines) and young professionals to prototype awesome ideas.</p>
                         <blockquote>
-                          <p>This time it's all about education, so build apps that help learning, analyze big data from the education sector, build quizzes for everyone etc.
-                            </p>
-                        </blockquote>
-                         <blockquote>
-                          <p>Meet new friends, partners or future employees.
+                            <p>This time it's all about education, so build apps that help learning, analyze big data from the education sector, build quizzes for everyone etc.
                             </p>
                         </blockquote>
                         <blockquote>
-                          <p>Organized by the association <a href="http://www.hackerstolz.de">Hackerstolz</a> in cooperation with the <a href="http://www.mcei.de">Mannheim Center for Innovation and Entrepreneurship</a> and the <a href="http://blog.squareroots.de/en/">SquareRoots Mannheim</a>
+                            <p>Meet new friends, partners or future employees.
                             </p>
                         </blockquote>
                         <blockquote>
-                          <p>When: <strong>April 2015</strong></p>
-                          <p>Where: <strong>University of Mannheim</strong></p>
+                            <p>Organized by the association <a href="http://www.hackerstolz.de">Hackerstolz</a> in cooperation with the <a href="http://www.mcei.de">Mannheim Center for Innovation and Entrepreneurship</a> and the <a href="http://blog.squareroots.de/en/">SquareRoots Mannheim</a>
+                            </p>
+                        </blockquote>
+                        <blockquote>
+                            <p>When: <strong>April 2015</strong>
+                            </p>
+                            <p>Where: <strong>University of Mannheim</strong>
+                            </p>
                         </blockquote>
                     </div>
                     <div class="col-md-4 anim-in-r">
-                         <img class="img-responsive" src="img/flyer-prequel_copy_small.jpeg">
+                        <img class="img-responsive" src="img/flyer-prequel_copy_small.jpeg">
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="partners">
-             <div class="container">
-                 <h2 class="anim-in-l">Partners</h2>
-                    <div class="row">
-                        <div class="col-md-6 anim-in-l text-center">
-                             <div class="col-inner">
-                                <a arget="_blank" href="https://www.mcei.de/"><img class="img-responsive center-block " src="img/partnerlogos/mceilogosmall.png"></a>
-                                <p>Mannheim Center for Entrepreneurship And Innovation</p>
-                            </div>
-                       </div>
-                       <div class="col-md-6 anim-in-r text-center">
-                            <div class="col-inner">
-                                <a arget="_blank" href="http://blog.squareroots.de/en/"><img class="img-responsive center-block " src="img/partnerlogos/squareRootsLog.jpg"></a>
-                                <p>SquareRoots Mannheim</p>
-                            </div>
+            <div class="container">
+                <h2 class="anim-in-l">Partners</h2>
+                <div class="row">
+                    <div class="col-md-6 anim-in-l text-center">
+                        <div class="col-inner">
+                            <a arget="_blank" href="https://www.mcei.de/"><img class="img-responsive center-block " src="img/partnerlogos/mceilogosmall.png">
+                            </a>
+                            <p>Mannheim Center for Entrepreneurship And Innovation</p>
                         </div>
                     </div>
-             </div>
+                    <div class="col-md-6 anim-in-r text-center">
+                        <div class="col-inner">
+                            <a arget="_blank" href="http://blog.squareroots.de/en/"><img class="img-responsive center-block " src="img/partnerlogos/squareRootsLog.jpg">
+                            </a>
+                            <p>SquareRoots Mannheim</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="faq">
@@ -193,39 +205,73 @@ design digital products and rapidly build innovative solutions that tackle today
                     <div class="col-md-6 anim-in-l">
                         <h3 class="monospace">Why education as the guiding theme?</h3>
                         <p class="lead">Education is a major challenge in today's society. It is so essential because...</p>
-                        <blockquote><p>there is an ever increasing amount of things to learn</p></blockquote>
-                        <blockquote><p>there are more opportunities to learn than ever before</p></blockquote>
-                        <blockquote><p>it becomes harder to decide what is worth learning</p></blockquote>
+                        <blockquote>
+                            <p>there is an ever increasing amount of things to learn</p>
+                        </blockquote>
+                        <blockquote>
+                            <p>there are more opportunities to learn than ever before</p>
+                        </blockquote>
+                        <blockquote>
+                            <p>it becomes harder to decide what is worth learning</p>
+                        </blockquote>
                     </div>
                     <div class="col-md-6 anim-in-r">
                         <h3 class="monospace">What to expect?</h3>
-                        <p class="lead">During the EduHack Mannheim, teams will come together to revise what and how society learns in a
-creative and open-minded environment. The results will be prototypes that outline their ideas.
-These could be, but are not limited to projects that...</p>
-                        <blockquote><p>process and visualize data to facilitate learning about a certain topic</p></blockquote>
-                        <blockquote><p>tools that give recommendations about what to learn</p></blockquote>
-                        <blockquote><p>tools that track and streamline the learning progress</p></blockquote>
-                        <blockquote><p>analyses about the current state of the education sector based on public data sets</p></blockquote>
+                        <p class="lead">During the EduHack Mannheim, teams will come together to revise what and how society learns in a creative and open-minded environment. The results will be prototypes that outline their ideas. These could be, but are not limited to projects that...</p>
+                        <blockquote>
+                            <p>process and visualize data to facilitate learning about a certain topic</p>
+                        </blockquote>
+                        <blockquote>
+                            <p>tools that give recommendations about what to learn</p>
+                        </blockquote>
+                        <blockquote>
+                            <p>tools that track and streamline the learning progress</p>
+                        </blockquote>
+                        <blockquote>
+                            <p>analyses about the current state of the education sector based on public data sets</p>
+                        </blockquote>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 anim-in-l">
                         <h3 class="monospace">Why attend?</h3>
-                        <blockquote><p>1. Learn new skills and apply the latest technology.</p></blockquote>
-                        <blockquote><p>2. Build your network by collaborating with innovators and experts across multiple disciplines.</p></blockquote>
-                        <blockquote><p>3. Build a technological prototype as a solution to real world challenges in education.</p></blockquote>
-                        <blockquote><p>4. Join a community of people committed to igniting innovation in digital education.</p></blockquote>
-                        <blockquote><p>5. Win awesome prices and magnify your reputation by sharing your ideas.</p></blockquote>
-                        <blockquote><p>6. Meet new people & have lots of fun!</p></blockquote>
+                        <blockquote>
+                            <p>1. Learn new skills and apply the latest technology.</p>
+                        </blockquote>
+                        <blockquote>
+                            <p>2. Build your network by collaborating with innovators and experts across multiple disciplines.</p>
+                        </blockquote>
+                        <blockquote>
+                            <p>3. Build a technological prototype as a solution to real world challenges in education.</p>
+                        </blockquote>
+                        <blockquote>
+                            <p>4. Join a community of people committed to igniting innovation in digital education.</p>
+                        </blockquote>
+                        <blockquote>
+                            <p>5. Win awesome prices and magnify your reputation by sharing your ideas.</p>
+                        </blockquote>
+                        <blockquote>
+                            <p>6. Meet new people & have lots of fun!</p>
+                        </blockquote>
                     </div>
                     <div class="col-md-6 anim-in-r">
                         <h3 class="monospace">Who is EduHacks for?</h3>
                         <p class="lead">Everyone is welcome to join the event. We strive for an interdisciplinary mixture of participants, where everybody can contribute their specific skills. However, we recommend having a background in one of the following areas:</p>
-                        <blockquote><p>Programming</p></blockquote>
-                        <blockquote><p>Web Design</p></blockquote>
-                        <blockquote><p>Statistics & Data Analysis</p></blockquote>
-                        <blockquote><p>Communication Design</p></blockquote>
-                        <blockquote><p>Educating or teaching</p></blockquote>
+                        <blockquote>
+                            <p>Programming</p>
+                        </blockquote>
+                        <blockquote>
+                            <p>Web Design</p>
+                        </blockquote>
+                        <blockquote>
+                            <p>Statistics & Data Analysis</p>
+                        </blockquote>
+                        <blockquote>
+                            <p>Communication Design</p>
+                        </blockquote>
+                        <blockquote>
+                            <p>Educating or teaching</p>
+                        </blockquote>
                     </div>
                 </div>
             </div>
@@ -248,7 +294,8 @@ These could be, but are not limited to projects that...</p>
                         <blockquote>
                             <p>Contact us for further information</p>
                         </blockquote>
-                        <p class="link"><a class="btn btn btn-lg" target="_blank" href="docs/sponsorenpakete-2015-v2-EN.pdf" role="button">Available Sponsoring Packages (EN)</a><a class="btn btn btn-lg" target="_blank" href="docs/sponsorenpakete-2015-v2-DE.pdf" role="button">Available Sponsoring Packages (DE)</a></p>
+                        <p class="link"><a class="btn btn btn-lg" target="_blank" href="docs/sponsorenpakete-2015-v2-EN.pdf" role="button">Available Sponsoring Packages (EN)</a><a class="btn btn btn-lg" target="_blank" href="docs/sponsorenpakete-2015-v2-DE.pdf" role="button">Available Sponsoring Packages (DE)</a>
+                        </p>
 
                         <p class="link"><a class="btn btn-primary btn-lg" href="mailto:sponsoring@hackerstolz.de?subject=Sponsoring EDUHacks" role="button">Send us an email!</a>
                         </p>
@@ -259,7 +306,7 @@ These could be, but are not limited to projects that...</p>
         </section>
 
 
-        <section >
+        <section>
         </section>
 
         <footer>
@@ -282,24 +329,34 @@ These could be, but are not limited to projects that...</p>
 
     <script src="js/classie.js"></script>
     <script src="js/pathLoader.js"></script>
+    <script src="js/texts-eduhacks.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Piwik -->
     <script type="text/javascript">
-      var _paq = _paq || [];
-      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-      _paq.push(["setCookieDomain", "*.hackerstolz.de"]);
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="//piwik.mdell.org/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
+    var _paq = _paq || [];
+    _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+    _paq.push(["setCookieDomain", "*.hackerstolz.de"]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u = "//piwik.mdell.org/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
         _paq.push(['setSiteId', 4]);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-      })();
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
     </script>
-    <noscript><p><img src="//piwik.mdell.org/piwik.php?idsite=4" style="border:0;" alt="" /></p></noscript>
+    <noscript>
+        <p><img src="//piwik.mdell.org/piwik.php?idsite=4" style="border:0;" alt="" />
+        </p>
+    </noscript>
     <!-- End Piwik Code -->
 
 </body>
