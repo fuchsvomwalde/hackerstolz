@@ -114,7 +114,7 @@ var _ = {
     }, faq4_p4: {
         DE: "Kommunikations Designer",
         EN: "Communication Design"
-    }, faq4_p4: {
+    }, faq4_p5: {
         DE: "Lehrer",
         EN: "Educating or teaching"
     }, sponsoring_intro: {

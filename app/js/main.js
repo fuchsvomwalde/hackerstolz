@@ -57,15 +57,17 @@
 
         // translate
         translate();
-        Array.prototype.slice.call(language.children).forEach(function(o,i,a){
-            o.addEventListener('click', function(e) {
-                if (e.currentTarget.nodeName === 'A') {
-                    languageDialog();
-                } else {
-                    selectLanguage(e);
-                }
+        if (language) {
+            Array.prototype.slice.call(language.children).forEach(function(o, i, a) {
+                o.addEventListener('click', function(e) {
+                    if (e.currentTarget.nodeName === 'A') {
+                        languageDialog();
+                    } else {
+                        selectLanguage(e);
+                    }
+                });
             });
-        });
+        };
     }
 
     function startLoading() {
