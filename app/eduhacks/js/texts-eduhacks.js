@@ -6,6 +6,9 @@ var _ = {
     }, partners: {
         DE: "Partner",
         EN: "Partners"
+    }, sponsors: {
+        DE: "Sponsoren",
+        EN: "Sponsors"
     }, faq: {
         DE: "FAQ",
         EN: "FAQ"
@@ -13,8 +16,8 @@ var _ = {
         DE: "Sponsoring",
         EN: "Sponsoring"
     }, intro1: {
-        DE: "EDUHack Mannheim ist der erste Hackathon, der an der Universität Mannheim veranstaltet wird. Die Veranstaltung soll Studenten, Technologyexperten und Personen aus dem Bildungsbereich zusammenbringen. So sollen Ideen in interdisziplinarer Zusammenarbeit entstehen und als digitale Prototypen realisiert werden. So wollen wir einen Beitrag zur Lösung der Problem im Bildungssektor leisten. ",
-        EN: "EduHacks Mannheim is the first hackathon taking place at the University of Mannheim. The event brings students, educators and technologists together to share ideas, form teams, design digital products and rapidly build innovative solutions that tackle today's educational challenges."
+        DE: "EDUHacks ist der erste von Hackerstolz veranstaltete Hackathon. Die Veranstaltung soll Studenten, Technologyexperten und Personen aus dem Bildungsbereich zusammenbringen. So sollen Ideen in interdisziplinarer Zusammenarbeit entstehen und als digitale Prototypen realisiert werden. So wollen wir einen Beitrag zur Lösung der Problem im Bildungssektor leisten. ",
+        EN: "EDUHacks Mannheim is the first hackathon hosted by Hackerstolz. The event brings students, educators and technologists together to share ideas, form teams, design digital products and rapidly build innovative solutions that tackle today's educational challenges."
     }, intro2: {
         DE: "Sind Sie als Organisation an einer Kooperation in Form von Sponsoring interessiert?",
         EN: "Are you an organization interested in sponsoring our event to get in touch with highly motivated students?"
@@ -135,5 +138,8 @@ var _ = {
     }, sponsoring_p5: {
         DE: "<a class='btn btn-primary btn-lg' href='mailto:sponsoring@hackerstolz.de?subject=Sponsoring EDUHacks' role='button'>Sende uns eine E-mail</a>",
         EN: "<a class='btn btn-primary btn-lg' href='mailto:sponsoring@hackerstolz.de?subject=Sponsoring EDUHacks' role='button'>Send us an email!</a>"
+    }, signup: {
+        DE: '<a target="_blank" class="btn btn-success btn-lg" href="https://www.eventbrite.com/e/eduhacks-uni-mannheim-tickets-16047078243" role="button">SIGN UP</a>',
+        EN: '<a target="_blank" class="btn btn-success btn-lg" href="https://www.eventbrite.com/e/eduhacks-uni-mannheim-tickets-16047078243" role="button">SIGN UP</a>'
     }
 };

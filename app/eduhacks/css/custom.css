@@ -170,6 +170,54 @@ strong {
     transform: translateY(0px);
 }
 
+/* Count Down */
+.count-down {
+	position: fixed;
+	height: auto;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #111;
+	z-index: 50;
+}
+.countdown-label span, #event-countdown span {
+	text-align: center;
+	color: #fff;
+	width: 100px;
+	display: inline-block;
+}
+.countdown-label span {
+	padding-top: 15px;
+	font-size: 2rem;
+}
+#event-countdown span {
+	padding: 15px;
+	font-size: 4rem;
+	font-weight: 800;
+}
+#signup {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	padding: 0;
+	margin: 42px;
+}
+#signup a {
+	font-weight: 800 !important;
+}
+@media (max-width: 767px) {
+	.countdown-label span, #event-countdown span {width: 75px;}
+	#event-countdown span {font-size: 3rem;padding: 10px;}
+	.countdown-label span {font-size: 1.5rem;padding-top: 10px;}
+	#signup {margin: 23px;}
+}
+@media (max-width: 359px) {
+	.countdown-label span, #event-countdown span {width: 50px;}
+	#event-countdown span {font-size: 2rem;padding: 5px;}
+	.countdown-label span {font-size: 0.825rem;padding-top: 5px;}
+	#signup {margin: 6px;}
+}
+
 /* Background Slideshow */
 /*
 .background-slideshow {
