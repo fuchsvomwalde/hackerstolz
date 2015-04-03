@@ -6,6 +6,12 @@ var _ = {
     }, partners: {
         DE: "Partner",
         EN: "Partners"
+    }, jury: {
+        DE: "Jury",
+        EN: "Jury"
+    }, impressions: {
+        DE: "Impressionen",
+        EN: "Impressions"
     }, sponsors: {
         DE: "Sponsoren",
         EN: "Sponsors"
@@ -16,8 +22,8 @@ var _ = {
         DE: "Sponsoring",
         EN: "Sponsoring"
     }, intro1: {
-        DE: "EDUHacks ist der erste von Hackerstolz veranstaltete Hackathon. Die Veranstaltung soll Studenten, Technologyexperten und Personen aus dem Bildungsbereich zusammenbringen. So sollen Ideen in interdisziplinarer Zusammenarbeit entstehen und als digitale Prototypen realisiert werden. So wollen wir einen Beitrag zur Lösung der Problem im Bildungssektor leisten. ",
-        EN: "EDUHacks Mannheim is the first hackathon hosted by Hackerstolz. The event brings students, educators and technologists together to share ideas, form teams, design digital products and rapidly build innovative solutions that tackle today's educational challenges."
+        DE: "EDU{Hacks} ist der erste von Hackerstolz veranstaltete Hackathon. Die Veranstaltung soll Studenten, Technologie-Experten und Personen aus dem Bildungsbereich zusammenbringen. So sollen Ideen in interdisziplinarer Zusammenarbeit entstehen und als digitale Prototypen realisiert werden. So wollen wir einen Beitrag zur Lösung der Probleme im Bildungssektor leisten. ",
+        EN: "EDU{Hacks} Mannheim is the first hackathon hosted by Hackerstolz. The event brings students, educators and technologists together to share ideas, form teams, design digital products and rapidly build innovative solutions that tackle today's educational challenges."
     }, intro2: {
         DE: "Sind Sie als Organisation an einer Kooperation in Form von Sponsoring interessiert?",
         EN: "Are you an organization interested in sponsoring our event to get in touch with highly motivated students?"
@@ -31,20 +37,44 @@ var _ = {
         DE: "Wir wollen ein Event veranstalten, welches  Studenten und Berufseinsteiger zusammenbringt, um neue Ideen als Prototyp zu realisieren.",
         EN: "We want to build a platform for students (from all disciplines) and young professionals to prototype awesome ideas."
     }, about_p1: {
-        DE: "Diesesmal lautet das Thema Education (deutsch:Bildung). Dementsprechend sollen Apps programiert, Daten analysiert, Spiele u.v.m gebaut werden, die den Begriff lernen neu definieren. ",
+        DE: "Dieses Mal lautet das Thema Education (deutsch: Bildung). Dementsprechend sollen Apps programmiert, Daten analysiert, Spiele u.v.m gebaut werden, die den Begriff \"lernen\" neu definieren.",
         EN: "This time it's all about education, so build apps that help learning, analyze big data from the education sector, build quizzes for everyone etc."
     }, about_p2: {
-        DE: "Treffe Freunde, Partner oder potentielle Angestellte",
-        EN: "Meet new friends, partners or future employees."
+        DE: "Treffe neue Freunde, Experten oder potentielle Angestellte/Arbeitgeber",
+        EN: "Meet new friends, experts or future employees/employers."
     }, about_p3: {
         DE: "Organisiert von dem Verein  <a href='http://www.hackerstolz.de'>Hackerstolz</a> in Kooperation mit dem <a href='http://www.mcei.de'>Mannheim Center for Innovation and Entrepreneurship</a> und der Studenteninitiative <a href='http://blog.squareroots.de/en/'>SquareRoots Mannheim</a>",
         EN: "Organized by the association <a href='http://www.hackerstolz.de'>Hackerstolz</a> in cooperation with the <a href='http://www.mcei.de'>Mannheim Center for Innovation and Entrepreneurship</a> and the <a href='http://blog.squareroots.de/en/'>SquareRoots Mannheim</a>"
     }, about_p4: {
-        DE: "Wann: <strong>April 2015</strong>",
-        EN: "When: <strong>April 2015</strong>"
+        DE: "Wann: <strong>18. - 19. April 2015</strong>",
+        EN: "When: <strong>18. - 19. April 2015</strong>"
     }, about_p5: {
-        DE: "Wo: <strong>Universität Mannheim</strong>",
-        EN: "Where: <strong>University of Mannheim</strong>"
+        DE: "Wo: <strong><a target='_blank' href='https://www.google.de/maps/dir//Mafinex+Technologiezentrum+GmbH,+Julius-Hatry-Straße+1,+68163+Mannheim/@49.473041,8.474409,17z/data=!4m13!1m4!3m3!1s0x4797cea7db500d37:0x9a435721e6fc738d!2sMafinex+Technologiezentrum+GmbH!3b1!4m7!1m0!1m5!1m1!1s0x4797cea7db500d37:0x9a435721e6fc738d!2m2!1d8.474409!2d49.473041'>MAFINEX Mannheim</a></strong>",
+        EN: "Where: <strong><a target='_blank' href='https://www.google.de/maps/dir//Mafinex+Technologiezentrum+GmbH,+Julius-Hatry-Straße+1,+68163+Mannheim/@49.473041,8.474409,17z/data=!4m13!1m4!3m3!1s0x4797cea7db500d37:0x9a435721e6fc738d!2sMafinex+Technologiezentrum+GmbH!3b1!4m7!1m0!1m5!1m1!1s0x4797cea7db500d37:0x9a435721e6fc738d!2m2!1d8.474409!2d49.473041'>MAFINEX Mannheim</a></strong>"
+    }, juryrole1: {
+        DE: "Jury Repräsentant \"Medien\"",
+        EN: "Jury Representative \"Media\""
+    }, juryinfo1: {
+        DE: "Digital Assistant von Herausgeber Dr. Hubert Burda: Hubert Burda Media, Munich",
+        EN: "Digital Assistant to the Publisher Dr. Hubert Burda: Hubert Burda Media, Munich"
+    }, juryrole2: {
+        DE: "Jury Repräsentant \"Technologie\"",
+        EN: "Jury Representative \"Technology\""
+    }, juryinfo2: {
+        DE: "JavaScript Enthusiast, Developer, Researcher: LAB75, Heidelberg",
+        EN: "JavaScript Enthusiast, Developer, Researcher: LAB75, Heidelberg"
+    }, juryrole3: {
+        DE: "Jury Repräsentant \"Bildung\"",
+        EN: "Jury Representative \"Education\""
+    }, juryinfo3: {
+        DE: "&nbsp;",
+        EN: "&nbsp;"
+    }, juryrole4: {
+        DE: "Jury Repräsentant \"Stadt Mannheim\"",
+        EN: "Jury Representative \"City Mannheim\""
+    }, juryinfo4: {
+        DE: "&nbsp;",
+        EN: "&nbsp;"
     }, faq1_head: {
         DE: "Warum Education als Thema?",
         EN: "Why education as the guiding theme?"
@@ -64,19 +94,19 @@ var _ = {
         DE: "Was erwartet Euch auf dem Event?",
         EN: "What to expect?"
     }, faq2_intro: {
-        DE: "Während des Hackathon, werden sich die Teilnehmer in Teams zusammenfinden, um zu analysieren, wie ein kreativer Lernprozess in einer offenen Zukunftsgesellschaft aussehen sollen. Diese Konzepte werden dann in digitale Prototypen übertragen, welche die Ideen als Hack verdeutlichen sollen. Einige Anregungen könnten sein",
+        DE: "Während des Hackathon, werden sich die Teilnehmer in Teams zusammenfinden, um zu analysieren, wie ein kreativer Lernprozess in einer offenen Zukunftsgesellschaft aussehen sollen. Diese Konzepte werden dann in digitale Prototypen umgesetzt, welche die Ideen als Hack verdeutlichen sollen. Einige Anregungen könnten sein...",
         EN: "During the EduHack Mannheim, teams will come together to revise what and how society learns in a creative and open-minded environment. The results will be prototypes that outline their ideas. These could be, but are not limited to projects that..."
     }, faq2_p1: {
-        DE: "Verarbeite, analysiere und visualiere Daten, um es Benutzern zu ermögliches neues über ein bestimmtes Thema zu lernen.",
+        DE: "verarbeite, analysiere und visualiere Daten, um es Benutzern zu ermögliches Neues über ein bestimmtes Thema zu lernen.",
         EN: "process and visualize data to facilitate learning about a certain topic"
     }, faq2_p2: {
-        DE: "Tools, die Vorschläge für Nutzer generieren, was Sie als nächstes Lernen sollten",
+        DE: "Tools entwickeln, die Vorschläge für Nutzer generieren, was sie als nächstes Lernen sollten",
         EN: "tools that give recommendations about what to learn"
     }, faq2_p3: {
         DE: "Self-Tracking Tools die den Lernprozess von Nutzern überwachen und verbessern",
         EN: "tools that track and streamline the learning progress"
     }, faq2_p4: {
-        DE: "Analysiere Datensätze aus dem öffentlichen Sektor über Bildungsausgaben",
+        DE: "Analysiere öffentliche Datensätze (Open Data) aus dem Bildungssektor",
         EN: "analysis about the current state of the education sector based on public data sets"
     }, faq3_head: {
         DE: "Warum sollte ich teilnehmen?",
@@ -103,7 +133,7 @@ var _ = {
         DE: "Für wen wurde die Veranstaltung konzipiert?",
         EN: "Who is EduHacks for?"
     }, faq4_intro: {
-        DE: "Jeder ist willkommen teilzunehmen. Wir streben einen bunten Teilnehmer Mix an, allerdings sind folgende Rollen typischer Weise auf einem Hackathon vertreten:",
+        DE: "Jeder ist willkommen teilzunehmen. Wir streben einen bunten Teilnehmermix an, allerdings sind folgende Rollen typischer Weise auf einem Hackathon vertreten:",
         EN: "Everyone is welcome to join the event. We strive for an interdisciplinary mixture of participants, where everybody can contribute their specific skills. However, we recommend having a background in one of the following areas:"
     }, faq4_p1: {
         DE: "Programmierer",
@@ -118,7 +148,7 @@ var _ = {
         DE: "Kommunikations Designer",
         EN: "Communication Design"
     }, faq4_p5: {
-        DE: "Lehrer",
+        DE: "Fachkräfte aus dem Bildungssektor",
         EN: "Educating or teaching"
     }, sponsoring_intro: {
         DE: "Die ideale Veranstaltung, um mit hoch motivierten Studenten in Kontakt zu kommen, um so zukünftige Angestellte zu finden",
@@ -133,7 +163,7 @@ var _ = {
         DE: "Kontaktieren Sie uns für weitere Informationen",
         EN: "Contact us for further information"
     }, sponsoring_p4: {
-        DE: "<a class='btn btn btn-lg' target='_blank' href='docs/sponsorenpakete-2015-v2-EN.pdf' role='button'>Sponsorenpakete(EN)</a><a class='btn btn btn-lg' target='_blank' href='docs/sponsorenpakete-2015-v2-DE.pdf' role='button'>Sponsorenpakete (DE)</a>",
+        DE: "<a class='btn btn btn-lg' target='_blank' href='docs/sponsorenpakete-2015-v2-EN.pdf' role='button'>Sponsorenpakete (EN)</a><a class='btn btn btn-lg' target='_blank' href='docs/sponsorenpakete-2015-v2-DE.pdf' role='button'>Sponsorenpakete (DE)</a>",
         EN: "<a class='btn btn btn-lg' target='_blank' href='docs/sponsorenpakete-2015-v2-EN.pdf' role='button'>Available Sponsoring Packages (EN)</a><a class='btn btn btn-lg' target='_blank' href='docs/sponsorenpakete-2015-v2-DE.pdf' role='button'>Available Sponsoring Packages (DE)</a>"
     }, sponsoring_p5: {
         DE: "<a class='btn btn-primary btn-lg' href='mailto:sponsoring@hackerstolz.de?subject=Sponsoring EDUHacks' role='button'>Sende uns eine E-mail</a>",

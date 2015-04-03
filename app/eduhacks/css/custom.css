@@ -71,6 +71,11 @@ strong {
 	width: 50vw !important;
 }
 
+/* OVERWRITE BOOTSTRAP */
+.container-fluid {
+	padding: 0px !important;
+}
+
 /* Navigation Bar - Overwrite Bootstrap with SAP Theme */
 /*.navbar {
 	background-color: #fff;

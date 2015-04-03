@@ -84,6 +84,21 @@
                                         '<span>' + minutes + '</span>' +
                                         '<span>' + seconds + '</span>';
         },1000);
+
+        // Initialize Picture Caroussel
+        // Der Bootstrap Scheiss hier ist mega inperformant!!! Das sollte ersetzt werden durch CSS3 Features
+        // var carousel = $('#carousel-impressions').carousel({
+        //   interval: false,
+        //   keyboard: false
+        // });
+        var carousel = $('#carousel-impressions').carousel();
+        $('#carousel-impressions .left').click(function(){
+            carousel.carousel('prev');
+        });
+
+        $('#carousel-impressions .right').click(function(){
+            carousel.carousel('next');
+        });
     }
 
     function startLoading() {
