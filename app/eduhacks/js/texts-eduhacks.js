@@ -3,6 +3,9 @@ var _ = {
     about: {
         DE: "Übersicht",
         EN: "About"
+    }, agenda: {
+        DE: "Ablauf",
+        EN: "Schedule"
     }, partners: {
         DE: "Partner",
         EN: "Partners"
@@ -34,8 +37,8 @@ var _ = {
         DE: "Scrolle weiter nach unten für weitere Informationen. <span class='text-info'>&gt;_ Stay tuned</span> ",
         EN: "Scroll down for more information. Details are coming soon. <span class='text-info'>&gt;_ Stay tuned</span>"
     }, about_intro: {
-        DE: "Wir wollen ein Event veranstalten, welches  Studenten und Berufseinsteiger zusammenbringt, um neue Ideen als Prototyp zu realisieren.",
-        EN: "We want to build a platform for students (from all disciplines) and young professionals to prototype awesome ideas."
+        DE: "EDU{Hacks} ist ein Event welches Studenten und Berufseinsteiger zusammenbringt, um neue Ideen als digitiale Prototyp umzusetzen.",
+        EN: "EDU{Hacks} is a  platform for students (from all disciplines) and young professionals to prototype awesome ideas."
     }, about_p1: {
         DE: "Dieses Mal lautet das Thema Education (deutsch: Bildung). Dementsprechend sollen Apps programmiert, Daten analysiert, Spiele u.v.m gebaut werden, die den Begriff \"lernen\" neu definieren.",
         EN: "This time it's all about education, so build apps that help learning, analyze big data from the education sector, build quizzes for everyone etc."
@@ -51,6 +54,15 @@ var _ = {
     }, about_p5: {
         DE: "Wo: <strong><a target='_blank' href='https://www.google.de/maps/dir//Mafinex+Technologiezentrum+GmbH,+Julius-Hatry-Straße+1,+68163+Mannheim/@49.473041,8.474409,17z/data=!4m13!1m4!3m3!1s0x4797cea7db500d37:0x9a435721e6fc738d!2sMafinex+Technologiezentrum+GmbH!3b1!4m7!1m0!1m5!1m1!1s0x4797cea7db500d37:0x9a435721e6fc738d!2m2!1d8.474409!2d49.473041'>MAFINEX Mannheim</a></strong>",
         EN: "Where: <strong><a target='_blank' href='https://www.google.de/maps/dir//Mafinex+Technologiezentrum+GmbH,+Julius-Hatry-Straße+1,+68163+Mannheim/@49.473041,8.474409,17z/data=!4m13!1m4!3m3!1s0x4797cea7db500d37:0x9a435721e6fc738d!2sMafinex+Technologiezentrum+GmbH!3b1!4m7!1m0!1m5!1m1!1s0x4797cea7db500d37:0x9a435721e6fc738d!2m2!1d8.474409!2d49.473041'>MAFINEX Mannheim</a></strong>"
+    }, about_p6: {
+        DE: "Das Event auf Facebook",
+        EN: "The event on Facebook"
+    }, schedule: {
+        DE: "Hier der Ablauf",
+        EN: "Here the Schedule"
+    }, about_p7: {
+        DE: "Es werden Preise im Gesamtwert von mind. <strong>1500,- Euro</strong> ausgeschüttet. Für den ersten Platz winken zusätzlich Tickets für die <a target='_blank' href='http://www.senacor.com/devcon/intro/'>Senacor DevCon</a>.",
+        EN: "The best three teams will win prices with a total value of more than <strong>1500 €/strong>. A jury from education, tech, media and politics will elect the winners. Furthermore the first team will win tickets for the <a target='_blank' href='http://www.senacor.com/devcon/intro/'>Senacor DevCon</a>."
     }, juryrole1: {
         DE: "Jury Repräsentant \"Medien\"",
         EN: "Jury Representative \"Media\""

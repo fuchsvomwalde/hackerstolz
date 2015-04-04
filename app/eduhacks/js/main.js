@@ -33,6 +33,7 @@
         language = document.getElementById('language-setting'),
         textElementsList = document.querySelectorAll('[data-txt]'),
         eventCountdown = document.getElementById('event-countdown'),
+        footer = document.querySelector('.count-down'),
         hideLangageList;
 
     function init() {
@@ -191,7 +192,21 @@
         window.scrollTo(0, 0);
     }
 
-    function scroll() {
+    var lastScrollTop = 0;
+    function scroll(e) {
+
+        // Hide Footer/Header
+        var st = window.pageYOffset;
+        if (st > lastScrollTop + 10){
+           // downscroll code
+           console.log("DOWN");
+           classie.add(footer, 'slidedown');
+        } else if (st < lastScrollTop - 10) {
+          // upscroll code
+          console.log("UP");
+          classie.remove(footer, 'slidedown');
+        }
+        lastScrollTop = st;
 
         var bodyRect = document.body.getBoundingClientRect(),
             viewYPosBottom = window.pageYOffset + window.innerHeight;

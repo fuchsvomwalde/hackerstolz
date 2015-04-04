@@ -183,7 +183,15 @@ strong {
 	left: 0;
 	width: 100%;
 	background-color: #111;
+	transition: transform 0.5s;
+	-webkit-transition: -webkit-transform 0.5s;
+	-moz-transition: -moz-transform 0.5s;
 	z-index: 50;
+}
+.count-down.slidedown {
+	transform: translateY(100%);
+	-webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
 }
 .countdown-label span, #event-countdown span {
 	text-align: center;
