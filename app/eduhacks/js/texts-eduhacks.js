@@ -62,7 +62,7 @@ var _ = {
         EN: "Here the Schedule"
     }, about_p7: {
         DE: "Es werden Preise im Gesamtwert von mind. <strong>1500,- Euro</strong> ausgeschüttet. Für den ersten Platz winken zusätzlich Tickets für die <a target='_blank' href='http://www.senacor.com/devcon/intro/'>Senacor DevCon</a>.",
-        EN: "The best three teams will win prices with a total value of more than <strong>1500 €/strong>. A jury from education, tech, media and politics will elect the winners. Furthermore the first team will win tickets for the <a target='_blank' href='http://www.senacor.com/devcon/intro/'>Senacor DevCon</a>."
+        EN: "The best three teams will win prices with a total value of more than <strong>1500 €</strong>. A jury from education, tech, media and politics will elect the winners. Furthermore the first team will win tickets for the <a target='_blank' href='http://www.senacor.com/devcon/intro/'>Senacor DevCon</a>."
     }, juryrole1: {
         DE: "Jury Repräsentant \"Medien\"",
         EN: "Jury Representative \"Media\""
