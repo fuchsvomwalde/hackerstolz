@@ -55,7 +55,7 @@ var _ = {
         DE: "Jury Repräsentant \"Medien\"",
         EN: "Jury Representative \"Media\""
     }, juryinfo1: {
-        DE: "Digital Assistant von Herausgeber Dr. Hubert Burda: Hubert Burda Media, Munich",
+        DE: "Digital Assistant von Herausgeber Dr. Hubert Burda: Hubert Burda Media, München",
         EN: "Digital Assistant to the Publisher Dr. Hubert Burda: Hubert Burda Media, Munich"
     }, juryrole2: {
         DE: "Jury Repräsentant \"Technologie\"",
