@@ -199,11 +199,9 @@
         var st = window.pageYOffset;
         if (st > lastScrollTop + 10){
            // downscroll code
-           console.log("DOWN");
            classie.add(footer, 'slidedown');
         } else if (st < lastScrollTop - 10) {
           // upscroll code
-          console.log("UP");
           classie.remove(footer, 'slidedown');
         }
         lastScrollTop = st;
