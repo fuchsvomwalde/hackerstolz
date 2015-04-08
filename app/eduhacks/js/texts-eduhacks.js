@@ -85,8 +85,14 @@ var _ = {
         DE: "Jury Repräsentant \"Stadt Mannheim\"",
         EN: "Jury Representative \"City Mannheim\""
     }, juryinfo4: {
-        DE: "&nbsp;",
-        EN: "&nbsp;"
+        DE: "Stadtverwaltung Mannheim, Fachbereich IT",
+        EN: "City Council Mannheim, Department IT"
+    }, juryrole5: {
+        DE: "Jury Repräsentant \"Interdisziplinär\"",
+        EN: "Jury Representative \"Interdisciplinary\""
+    }, juryinfo5: {
+        DE: "Mr. Open Data: Gründer Open Data Initative Rhein-Neckar, Mannheim",
+        EN: "Mr. Open Data: Founder Open Data Initative Rhein-Neckar, Mannheim"
     }, faq1_head: {
         DE: "Warum Education als Thema?",
         EN: "Why education as the guiding theme?"
