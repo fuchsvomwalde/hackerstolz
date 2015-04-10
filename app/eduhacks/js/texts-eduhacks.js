@@ -79,8 +79,8 @@ var _ = {
         DE: "Jury Repräsentant \"Bildung\"",
         EN: "Jury Representative \"Education\""
     }, juryinfo3: {
-        DE: "&nbsp;",
-        EN: "&nbsp;"
+        DE: "Post-Doc Position Universität Mannheim, Lehrstuhl für Praktische Informatik IV",
+        EN: "Postdoctoral Position University of Mannheim, Chair of Practical Computer Science IV"
     }, juryrole4: {
         DE: "Jury Repräsentant \"Stadt Mannheim\"",
         EN: "Jury Representative \"City Mannheim\""
