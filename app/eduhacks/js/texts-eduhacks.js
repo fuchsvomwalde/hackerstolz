@@ -85,8 +85,8 @@ var _ = {
         DE: "Jury Repräsentant \"Stadt Mannheim\"",
         EN: "Jury Representative \"City Mannheim\""
     }, juryinfo4: {
-        DE: "Stadtverwaltung Mannheim, Fachbereich IT",
-        EN: "City Council Mannheim, Department IT"
+        DE: "Projektleiter Open Data Stadt Mannheim",
+        EN: "Project Lead Open Data City of Mannheim"
     }, juryrole5: {
         DE: "Jury Repräsentant \"Interdisziplinär\"",
         EN: "Jury Representative \"Interdisciplinary\""
