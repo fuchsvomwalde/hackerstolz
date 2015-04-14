@@ -72,19 +72,28 @@
         };
 
         // Start countdown clock
-        var EventDate = new Date(2015, 3, 18); // Why is 3 as month correct???
-        setInterval(function(){
+        var EventDate = new Date(2015, 3, 18, 9, 0); // Why is 3 as month correct???
+        //var EventDate = new Date(2015, 3, 15, 0, 18);
+        var ClockInterval = setInterval(function() {
             var Today = new Date();
             var TimeLeft = Math.floor((EventDate.getTime() / 1000) - (Today.getTime() / 1000));
-            var days = Math.floor(TimeLeft / 60 / 60 / 24);
-            var hours = Math.floor(TimeLeft / 60 / 60 % 24);
-            var minutes = Math.floor(TimeLeft / 60 % 60);
-            var seconds = Math.floor(TimeLeft % 60);
-            eventCountdown.innerHTML =  '<span>' + days + '</span>' +
-                                        '<span>' + hours + '</span>' +
-                                        '<span>' + minutes + '</span>' +
-                                        '<span>' + seconds + '</span>';
-        },1000);
+            if (TimeLeft > 0) {
+                var days = Math.floor(TimeLeft / 60 / 60 / 24);
+                var hours = Math.floor(TimeLeft / 60 / 60 % 24);
+                var minutes = Math.floor(TimeLeft / 60 % 60);
+                var seconds = Math.floor(TimeLeft % 60);
+                eventCountdown.innerHTML = '<span>' + days + '</span>' +
+                    '<span>' + hours + '</span>' +
+                    '<span>' + minutes + '</span>' +
+                    '<span>' + seconds + '</span>';
+            } else {
+                ClockInterval = null;
+                eventCountdown.innerHTML = '<span>0</span>' +
+                    '<span>0</span>' +
+                    '<span>0</span>' +
+                    '<span>0</span>';
+            }
+        }, 1000);
 
         // Initialize Picture Caroussel
         // Der Bootstrap Scheiss hier ist mega inperformant!!! Das sollte ersetzt werden durch CSS3 Features
@@ -93,11 +102,11 @@
         //   keyboard: false
         // });
         var carousel = $('#carousel-impressions').carousel();
-        $('#carousel-impressions .left').click(function(){
+        $('#carousel-impressions .left').click(function() {
             carousel.carousel('prev');
         });
 
-        $('#carousel-impressions .right').click(function(){
+        $('#carousel-impressions .right').click(function() {
             carousel.carousel('next');
         });
     }
@@ -193,16 +202,17 @@
     }
 
     var lastScrollTop = 0;
+
     function scroll(e) {
 
         // Hide Footer/Header
         var st = window.pageYOffset;
-        if (st > lastScrollTop + 10){
-           // downscroll code
-           classie.add(footer, 'slidedown');
+        if (st > lastScrollTop + 10) {
+            // downscroll code
+            classie.add(footer, 'slidedown');
         } else if (st < lastScrollTop - 10) {
-          // upscroll code
-          classie.remove(footer, 'slidedown');
+            // upscroll code
+            classie.remove(footer, 'slidedown');
         }
         lastScrollTop = st;
 

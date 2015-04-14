@@ -25,7 +25,7 @@ var _ = {
         DE: "Sponsoring",
         EN: "Sponsoring"
     }, intro1: {
-        DE: "EDU{Hacks} ist der erste von Hackerstolz veranstaltete Hackathon. Die Veranstaltung soll Studenten, Technologie-Experten und Personen aus dem Bildungsbereich zusammenbringen. So sollen Ideen in interdisziplinarer Zusammenarbeit entstehen und als digitale Prototypen realisiert werden. So wollen wir einen Beitrag zur Lösung der Probleme im Bildungssektor leisten. ",
+        DE: "EDU{Hacks} ist der erste von Hackerstolz veranstaltete Hackathon. Die Veranstaltung soll Studenten, Technologie-Experten und Personen aus dem Bildungsbereich zusammenbringen. So sollen Ideen in interdisziplinärer Zusammenarbeit entstehen und als digitale Prototypen realisiert werden. So wollen wir einen Beitrag zur Lösung der Probleme im Bildungssektor leisten. ",
         EN: "EDU{Hacks} Mannheim is the first hackathon hosted by Hackerstolz. The event brings students, educators and technologists together to share ideas, form teams, design digital products and rapidly build innovative solutions that tackle today's educational challenges."
     }, intro2: {
         DE: "Sind Sie als Organisation an einer Kooperation in Form von Sponsoring interessiert?",
@@ -37,10 +37,10 @@ var _ = {
         DE: "Scrolle weiter nach unten für weitere Informationen. <span class='text-info'>&gt;_ Stay tuned</span> ",
         EN: "Scroll down for more information. Details are coming soon. <span class='text-info'>&gt;_ Stay tuned</span>"
     }, about_intro: {
-        DE: "EDU{Hacks} ist ein Event welches Studenten und Berufseinsteiger zusammenbringt, um neue Ideen als digitiale Prototyp umzusetzen.",
+        DE: "EDU{Hacks} ist ein Event welches Studenten und Berufseinsteiger zusammenbringt, um neue Ideen als digitale Prototypen umzusetzen.",
         EN: "EDU{Hacks} is a  platform for students (from all disciplines) and young professionals to prototype awesome ideas."
     }, about_p1: {
-        DE: "Dieses Mal lautet das Thema Education (deutsch: Bildung). Dementsprechend sollen Apps programmiert, Daten analysiert, Spiele u.v.m gebaut werden, die den Begriff \"lernen\" neu definieren.",
+        DE: "Dieses Mal lautet das Thema Education (deutsch: Bildung). Dementsprechend sollen Apps programmiert, Daten analysiert, Spiele u.v.m. gebaut werden, die den Begriff \"lernen\" neu definieren.",
         EN: "This time it's all about education, so build apps that help learning, analyze big data from the education sector, build quizzes for everyone etc."
     }, about_p2: {
         DE: "Treffe neue Freunde, Experten oder potentielle Angestellte/Arbeitgeber",
@@ -49,11 +49,11 @@ var _ = {
         DE: "Organisiert von dem Verein  <a href='http://www.hackerstolz.de'>Hackerstolz</a> in Kooperation mit dem <a href='http://www.mcei.de'>Mannheim Center for Innovation and Entrepreneurship</a> und der Studenteninitiative <a href='http://blog.squareroots.de/en/'>SquareRoots Mannheim</a>",
         EN: "Organized by the association <a href='http://www.hackerstolz.de'>Hackerstolz</a> in cooperation with the <a href='http://www.mcei.de'>Mannheim Center for Innovation and Entrepreneurship</a> and the <a href='http://blog.squareroots.de/en/'>SquareRoots Mannheim</a>"
     }, about_p4: {
-        DE: "Wann: <strong>18. - 19. April 2015</strong>",
-        EN: "When: <strong>18. - 19. April 2015</strong>"
+        DE: "Wann? <strong>18. - 19. April 2015</strong>",
+        EN: "When? <strong>18. - 19. April 2015</strong>"
     }, about_p5: {
-        DE: "Wo: <strong><a target='_blank' href='https://www.google.de/maps/dir//Mafinex+Technologiezentrum+GmbH,+Julius-Hatry-Straße+1,+68163+Mannheim/@49.473041,8.474409,17z/data=!4m13!1m4!3m3!1s0x4797cea7db500d37:0x9a435721e6fc738d!2sMafinex+Technologiezentrum+GmbH!3b1!4m7!1m0!1m5!1m1!1s0x4797cea7db500d37:0x9a435721e6fc738d!2m2!1d8.474409!2d49.473041'>MAFINEX Mannheim</a></strong>",
-        EN: "Where: <strong><a target='_blank' href='https://www.google.de/maps/dir//Mafinex+Technologiezentrum+GmbH,+Julius-Hatry-Straße+1,+68163+Mannheim/@49.473041,8.474409,17z/data=!4m13!1m4!3m3!1s0x4797cea7db500d37:0x9a435721e6fc738d!2sMafinex+Technologiezentrum+GmbH!3b1!4m7!1m0!1m5!1m1!1s0x4797cea7db500d37:0x9a435721e6fc738d!2m2!1d8.474409!2d49.473041'>MAFINEX Mannheim</a></strong>"
+        DE: "Wo? <strong><a target='_blank' href='https://www.google.de/maps/dir//Mafinex+Technologiezentrum+GmbH,+Julius-Hatry-Straße+1,+68163+Mannheim/@49.473041,8.474409,17z/data=!4m13!1m4!3m3!1s0x4797cea7db500d37:0x9a435721e6fc738d!2sMafinex+Technologiezentrum+GmbH!3b1!4m7!1m0!1m5!1m1!1s0x4797cea7db500d37:0x9a435721e6fc738d!2m2!1d8.474409!2d49.473041'>MAFINEX Mannheim</a></strong>",
+        EN: "Where? <strong><a target='_blank' href='https://www.google.de/maps/dir//Mafinex+Technologiezentrum+GmbH,+Julius-Hatry-Straße+1,+68163+Mannheim/@49.473041,8.474409,17z/data=!4m13!1m4!3m3!1s0x4797cea7db500d37:0x9a435721e6fc738d!2sMafinex+Technologiezentrum+GmbH!3b1!4m7!1m0!1m5!1m1!1s0x4797cea7db500d37:0x9a435721e6fc738d!2m2!1d8.474409!2d49.473041'>MAFINEX Mannheim</a></strong>"
     }, about_p6: {
         DE: "Das Event auf Facebook",
         EN: "The event on Facebook"
@@ -109,19 +109,19 @@ var _ = {
         DE: "es fällt schwer zu entscheiden, welche Konzepte oder Technologien es wirklich Wert sind zu lernen",
         EN: "it becomes harder to decide what is worth learning"
     }, faq2_head: {
-        DE: "Was erwartet Euch auf dem Event?",
+        DE: "Was erwartet euch auf dem Event?",
         EN: "What to expect?"
     }, faq2_intro: {
-        DE: "Während des Hackathon, werden sich die Teilnehmer in Teams zusammenfinden, um zu analysieren, wie ein kreativer Lernprozess in einer offenen Zukunftsgesellschaft aussehen sollen. Diese Konzepte werden dann in digitale Prototypen umgesetzt, welche die Ideen als Hack verdeutlichen sollen. Einige Anregungen könnten sein...",
+        DE: "Während des Hackathon werden sich die Teilnehmer in Teams zusammenfinden, um zu analysieren, wie ein kreativer Lernprozess in einer offenen Zukunftsgesellschaft aussehen soll. Diese Konzepte werden dann in digitale Prototypen umgesetzt, welche die Ideen als Hack verdeutlichen sollen. Einige Anregungen könnten sein...",
         EN: "During the EduHack Mannheim, teams will come together to revise what and how society learns in a creative and open-minded environment. The results will be prototypes that outline their ideas. These could be, but are not limited to projects that..."
     }, faq2_p1: {
         DE: "verarbeite, analysiere und visualiere Daten, um es Benutzern zu ermögliches Neues über ein bestimmtes Thema zu lernen.",
         EN: "process and visualize data to facilitate learning about a certain topic"
     }, faq2_p2: {
-        DE: "Tools entwickeln, die Vorschläge für Nutzer generieren, was sie als nächstes Lernen sollten",
+        DE: "Tools entwickeln, die Vorschläge für Nutzer generieren, was sie als nächstes lernen sollten",
         EN: "tools that give recommendations about what to learn"
     }, faq2_p3: {
-        DE: "Self-Tracking Tools die den Lernprozess von Nutzern überwachen und verbessern",
+        DE: "Self-Tracking Tools, die den Lernprozess von Nutzern überwachen und verbessern",
         EN: "tools that track and streamline the learning progress"
     }, faq2_p4: {
         DE: "Analysiere öffentliche Datensätze (Open Data) aus dem Bildungssektor",
@@ -130,7 +130,7 @@ var _ = {
         DE: "Warum sollte ich teilnehmen?",
         EN: "Why attend?"
     }, faq3_p1: {
-        DE: "1. Lerne neues und probiere neuste Technologien aus",
+        DE: "1. Lerne neues und probiere neueste Technologien aus",
         EN: "1. Learn new skills and apply the latest technology."
     }, faq3_p2: {
         DE: "2. Vergrößere dein Netzwerk in dem du mit innovativen Personen aus unterschiedlichsten Bereichen zusammenarbeitest",
